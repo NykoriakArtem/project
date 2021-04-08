@@ -1,0 +1,9 @@
+flake8==3.8.1
+black==19.10b0
+browsermob-proxy==0.8.0
+simple-settings==0.19.1
+selenium==3.141.0
+pytest==5.4.2
+pytest-fixture-config==1.7.0
+pytest-webdriver==1.7.0
+python-dotenv==0.13.0

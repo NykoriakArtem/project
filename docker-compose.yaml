@@ -1,0 +1,31 @@
+version: '2.1'
+
+services:
+  zalenium:
+    image: "dosel/zalenium:latest"
+    container_name: zalenium
+    hostname: zalenium
+    tty: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 4444:4444
+    command: >
+      start --desiredContainers 1
+            --maxDockerSeleniumContainers 1
+            --timeZone "America/New_York"
+            --retentionPeriod 1
+            --sauceLabsEnabled false
+            --startTunnel false
+
+  browsermobproxy:
+    image: trc229/browsermob-proxy:latest
+    ports:
+      - "9090-9191:9090-9191"
+    expose:
+      - "9090-9191"
+    links:
+      - zalenium
+
+  zalenium_dependency:
+    image: "elgalu/selenium:latest"
