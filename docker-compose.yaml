@@ -11,8 +11,8 @@ services:
     ports:
       - 4444:4444
     command: >
-      start --desiredContainers 1
-            --maxDockerSeleniumContainers 1
+      start --desiredContainers 2
+            --maxDockerSeleniumContainers 4
             --timeZone "America/New_York"
             --retentionPeriod 1
             --sauceLabsEnabled false
