@@ -2,6 +2,7 @@ import os
 
 URL = "https://ce.contrastsecurity.com/Contrast"
 
+
 class Contrast:
     def __init__(self):
         self.admin_user = self.AdminUser()

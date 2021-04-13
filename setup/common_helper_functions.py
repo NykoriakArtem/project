@@ -9,9 +9,7 @@ from locators.login_page import LoginPageLocators
 def log_in_with_admin_user(self, user):
     driver = self.driver
     wait = self.wait
-
     driver.get(settings.URL)
-
     driver.find_element(*LoginPageLocators.USERNAME_FIELD).send_keys(user.email)
     driver.find_element(*LoginPageLocators.NEXT_LOGIN_BUTTON).click()
     wait.until(visibility_of_element_located(LoginPageLocators.PASSWORD_FIELD))
@@ -19,7 +17,6 @@ def log_in_with_admin_user(self, user):
 
     driver.find_element(*LoginPageLocators.NEXT_LOGIN_BUTTON).click()
     wait.until(visibility_of_element_located(LoginPageLocators.DASHBOARD_LOGO))
-
 
 
 def find_element_click(self, element):
