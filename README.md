@@ -1,5 +1,5 @@
 ## Prerequisites
-
+PLEASE BE SURE TO INSTALL AND USE PYTHON 3.6.7
 ### Install Python
 
 1. Install Python 3.6.7 using PyEnv:
