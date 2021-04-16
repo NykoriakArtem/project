@@ -1,4 +1,4 @@
-browsermob-proxy==0.8.0
+requests==2.24.0
 simple-settings==0.19.1
 selenium==3.141.0
 pytest==5.4.2

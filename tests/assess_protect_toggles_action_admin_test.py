@@ -28,8 +28,7 @@ class TestAssessProtectTogglesActionAdmin(DriverManager):
         # navigate to the sample server and click on toggles there.
         find_element_click(self, ServersPageLocators.SAMPLE_SERVER)
         wait_and_assert_displayed(self, ServersPageLocators.SERVER_PANEL)
-        toggles_1 = driver.find_elements\
-            (*ServersPageLocators.ASSESS_PROTECT_TOGGLES_SERVERS_OVERVIEW_PAGE)
+        toggles_1 = driver.find_elements(*ServersPageLocators.ASSESS_PROTECT_TOGGLES_SERVERS_OVERVIEW_PAGE)
         # test will fail here b/c of a bug described in BR-003.
         for x in range(0,len(toggles_1)):
             if toggles_1[x].is_enabled():
