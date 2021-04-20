@@ -4,7 +4,7 @@ from simple_settings import settings
 from setup.driver_manager import DriverManager
 
 
-class TestTagAPIRequests(DriverManager):
+class TestTagAPIRequests:
     def test_tag_api_requests(self):
         tag_name = f"Test_tag {randint(1, 100)}"
         # test PUT request to create a tag for vulnerability.

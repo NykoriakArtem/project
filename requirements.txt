@@ -10,5 +10,5 @@ pytest-parallel==0.1.0
 pytest-rerunfailures==9.0
 pytest-forked==1.1.3
 pytest-html==2.1.1
-py==1.8.1
+py==1.10.0
 pycodestyle==2.6.0
